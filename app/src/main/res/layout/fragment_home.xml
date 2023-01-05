@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1E1E1E"
+    tools:context=".Dashboard.HomeFragment">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/parent_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="298dp"
+        android:clipToPadding="true"
+        android:paddingTop="5dp"
+        android:paddingBottom="55dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:listitem="@layout/parent_item_row" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/child_recycler_view1"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/products"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:listitem="@layout/child_item_row1">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/products"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="255dp"
+        android:layout_marginBottom="15.5dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:letterSpacing="0.02"
+        android:lineHeight="21dp"
+        android:text="@string/heading_products_main"
+        android:textAllCaps="true"
+        android:textColor="#FFFFFF"
+        android:textFontWeight="600"
+        android:textSize="14dp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toTopOf="@+id/parent_recycler_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+    </androidx.appcompat.widget.AppCompatTextView>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/offers"
+        android:layout_width="115dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="247dp"
+        android:layout_marginBottom="12dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:letterSpacing="0.02"
+        android:lineHeight="36dp"
+        android:text="@string/product_offer"
+        android:textColor="#CDF34A"
+        android:textFontWeight="800"
+        android:textSize="24dp"
+        android:textStyle="normal|bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/child_recycler_view1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+    </androidx.appcompat.widget.AppCompatTextView>
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imageView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        android:background="@drawable/corner"
+        android:src="@drawable/rectangle_11"
+        app:layout_constraintBottom_toTopOf="@+id/offers"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/profile_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/profile_name"
+        app:fontFamily="@font/poppins_semibold"
+        android:textFontWeight="600"
+        android:textSize="16dp"
+        android:lineHeight="24dp"
+        android:textStyle="normal"
+        android:letterSpacing="0.02"
+        android:textColor="#000000"
+        android:layout_marginBottom="69dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintStart_toEndOf="@+id/profile_image"
+        app:layout_constraintBottom_toTopOf="@+id/child_recycler_view3"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/profile_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/profile_email"
+        app:fontFamily="@font/poppins"
+        android:textFontWeight="400"
+        android:textSize="13dp"
+        android:lineHeight="20dp"
+        android:textStyle="normal"
+        android:textColor="#000000"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="-5dp"
+        app:layout_constraintStart_toEndOf="@id/profile_image"
+        app:layout_constraintTop_toBottomOf="@+id/profile_name"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/child_recycler_view2"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:paddingTop="12dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:listitem="@layout/child_item_row2" />
+
+    <androidx.recyclerview.widget.RecyclerView
+
+        android:id="@+id/child_recycler_view3"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="6dp"
+        tools:listitem="@layout/child_item_row3"
+        app:layout_constraintBottom_toTopOf="@+id/child_recycler_view2" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/profile_image"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerInside"
+        android:layout_marginBottom="55dp"
+        android:layout_marginStart="19dp"
+        android:src="@drawable/profileimage"
+        app:layout_constraintBottom_toTopOf="@+id/child_recycler_view3"
+        app:layout_constraintStart_toStartOf="parent"/>
+    
+    <com.google.android.material.imageview.ShapeableImageView
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:src="@drawable/et_pencil"
+        android:layout_marginBottom="97dp"
+        android:layout_marginStart="258dp"
+        app:layout_constraintBottom_toTopOf="@+id/child_recycler_view3"
+        app:layout_constraintStart_toEndOf="@+id/profile_image"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

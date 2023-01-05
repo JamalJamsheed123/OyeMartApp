@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">OyeMart</string>
+    <string name="Ellipse_UI">Design</string>
+    <string name="Rectangle_bar">Rectangle_Bar</string>
+    <string name="Best_online_shopping">Best Online Shopping</string>
+    <string name="skip_Button">skip</string>
+    <string name="but_Action">Next</string>
+    <string name="but_Action_signin">sign in</string>
+    <string name="but_Action_signup">sign up</string>
+    <string name="but_Action1">Get Start</string>
+    <string name="choose_product">Choose Favorite Product</string>
+    <string name="Get_Delivery">Get Fast Delivery</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment1">Home fragment</string>
+    <string name="hello_blank_fragment2">Search blank fragment</string>
+    <string name="hello_blank_fragment3">Priority blank fragment</string>
+    <string name="hello_blank_fragment4">AddCart blank fragment</string>
+    <string name="hello_blank_fragment5">Profile blank fragment</string>
+    <string name="signin_oyemart">Sign In</string>
+    <string name="signup_oyemart">Sign Up</string>
+    <string name="hint_text_signin">Email</string>
+    <string name="hint_text_pass">Password</string>
+    <string name="mart_forgot_pass">forgot password?</string>
+    <string name="mart_signUp">dont have an account?Sign up.</string>
+    <string name="hint_text_name_sigup">Name</string>
+    <string name="hint_text_confirm_pass">Confirm Password</string>
+    <string name="heading_products_main">popular product</string>
+    <string name="heading_1">Mezan Oil</string>
+    <string name="heading_2">Saffola Oil</string>
+    <string name="heading_3">Kunjila Oil</string>
+    <string name="heading_4">Saffola Oil</string>
+    <string name="heading_5">Mezan Oil</string>
+    <string name="location">North Karachi, North Karachi</string>
+    <string name="rating">5.0</string>
+    <string name="delivery_free">Free</string>
+    <string name="product_offer">Hot Offer</string>
+    <string name="product_catogory1">Lux</string>
+    <string name="product_catogory2">Ghee</string>
+    <string name="product_catogory3">Oil</string>
+    <string name="product_catogory4">Tea</string>
+    <string name="product_catogory5">Sunrige</string>
+    <string name="product_catogory6">Colgate</string>
+    <string name="product_catogory7">Coffee</string>
+    <string name="profile_name">Ali Jam</string>
+    <string name="profile_email">Ali.jam3@gmail.com</string>
+
+
+
+</resources>
