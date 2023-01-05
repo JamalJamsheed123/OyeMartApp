@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1E1E1E"
+    tools:context=".features.onboarding.screens.MartLoginScreen">
+
+    <TextView
+        android:id="@+id/SignIn"
+        android:layout_width="120dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="255dp"
+        android:text="@string/signup_oyemart"
+        android:fontFamily="@font/poppins"
+        android:textStyle="normal"
+        android:textColor="#FFFFFF"
+        android:textSize="32dp"
+        android:textAlignment="center"
+        android:textFontWeight="400"
+        android:lineHeight="48dp"
+        android:layout_marginBottom="41dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/Name_Layout"/>
+
+    <Button
+        android:id="@+id/signup_button"
+        android:layout_width="358dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="24dp"
+        android:textColor="#000000"
+        android:text="@string/but_Action_signup"
+        android:gravity="center"
+        android:fontFamily="@font/poppins_semibold"
+        android:textStyle="normal"
+        android:textSize="24dp"
+        android:textAllCaps="false"
+        android:letterSpacing="0.095"
+        android:background="@drawable/rounded_corner2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/Mart_SignUp">
+
+    </Button>
+
+    <ImageView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rectangleBar"
+        android:layout_marginStart="146dp"
+        android:layout_marginEnd="125dp"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/rectangle_2"
+        android:contentDescription="@string/Rectangle_bar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+    </ImageView>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/Name_Layout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="355dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="40dp"
+        android:hint="@string/hint_text_name_sigup"
+        app:hintTextColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        app:boxStrokeWidth="0.5dp"
+        app:boxStrokeColor="#CDF34A"
+        app:boxCornerRadiusTopStart="22.5dp"
+        app:boxCornerRadiusTopEnd="22.5dp"
+        app:boxCornerRadiusBottomStart="22.5dp"
+        app:boxCornerRadiusBottomEnd="22.5dp"
+        app:boxBackgroundMode="outline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/Email_Layout">
+
+        <com.google.android.material.textfield.TextInputEditText
+
+            android:id="@+id/Name"
+            android:drawableEnd="@drawable/check"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/poppins"
+            android:textStyle="normal"
+            android:textColor="#FFFFFF"
+            android:textSize="17dp"
+            android:lineHeight="30dp"
+            android:textFontWeight="300"
+            android:textAlignment="center"
+            android:paddingBottom="-1dp"
+            android:paddingTop="-1dp"
+
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/Email_Layout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="355dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="40dp"
+        android:hint="@string/hint_text_signin"
+        app:hintTextColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        app:boxStrokeWidth="0.5dp"
+        app:boxStrokeColor="#CDF34A"
+        app:boxCornerRadiusTopStart="22.5dp"
+        app:boxCornerRadiusTopEnd="22.5dp"
+        app:boxCornerRadiusBottomStart="22.5dp"
+        app:boxCornerRadiusBottomEnd="22.5dp"
+        app:boxBackgroundMode="outline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/Password_Layout"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+
+            android:id="@+id/Email"
+            android:drawableEnd="@drawable/check"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/poppins"
+            android:textStyle="normal"
+            android:textColor="#FFFFFF"
+            android:textSize="17dp"
+            android:lineHeight="30dp"
+            android:textFontWeight="300"
+            android:textAlignment="center"
+            android:paddingBottom="-1dp"
+            android:paddingTop="-1dp"
+
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/Password_Layout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="355dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="40dp"
+        android:hint="@string/hint_text_pass"
+        app:hintTextColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        app:endIconMode="password_toggle"
+        app:boxStrokeWidth="0.5dp"
+        app:boxStrokeColor="#CDF34A"
+        app:boxCornerRadiusTopStart="22.5dp"
+        app:boxCornerRadiusTopEnd="22.5dp"
+        app:boxCornerRadiusBottomStart="22.5dp"
+        app:boxCornerRadiusBottomEnd="22.5dp"
+        app:boxBackgroundMode="outline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/ConfirmPassword_Layout"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+
+            android:id="@+id/Password"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/poppins"
+            android:textStyle="normal"
+            android:textColor="#FFFFFF"
+            android:textSize="17dp"
+            android:lineHeight="30dp"
+            android:textFontWeight="300"
+            android:textAlignment="center"
+            android:paddingBottom="-1dp"
+            android:paddingTop="-1dp"
+
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/ConfirmPassword_Layout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="355dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="32dp"
+        android:hint="@string/hint_text_confirm_pass"
+        app:endIconMode="password_toggle"
+        app:hintTextColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        app:boxStrokeWidth="0.5dp"
+        app:boxStrokeColor="#CDF34A"
+        app:boxCornerRadiusTopStart="22.5dp"
+        app:boxCornerRadiusTopEnd="22.5dp"
+        app:boxCornerRadiusBottomStart="22.5dp"
+        app:boxCornerRadiusBottomEnd="22.5dp"
+        app:boxBackgroundMode="outline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/signup_button"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ConPassword"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/poppins"
+            android:textStyle="normal"
+            android:textColor="#FFFFFF"
+            android:textSize="17dp"
+            android:lineHeight="30dp"
+            android:textFontWeight="300"
+            android:textAlignment="center"
+            android:paddingBottom="-1dp"
+            android:paddingTop="-1dp"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/Mart_SignUp"
+        android:layout_width="300dp"
+        android:layout_height="21dp"
+        android:text="@string/mart_signUp"
+        android:layout_marginBottom="33dp"
+        android:layout_marginStart="69dp"
+        android:layout_marginEnd="69dp"
+        android:fontFamily="@font/poppins"
+        android:textStyle="normal"
+        android:textSize="14dp"
+        android:textColor="#E9F2CB"
+        android:textAlignment="center"
+        android:letterSpacing="0.095"
+        android:textFontWeight="600"
+        android:lineHeight="21dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/social_tab"/>
+
+    <LinearLayout
+        android:id="@+id/social_tab"
+        android:layout_width="236dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="48dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/rectangleBar"
+        >
+
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/twitter"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="64dp"
+            >
+
+        </ImageView>
+
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/facebook"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="64dp">
+
+        </ImageView>
+
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/google_icon"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="64dp">
+
+        </ImageView>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
