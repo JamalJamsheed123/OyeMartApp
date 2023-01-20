@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="wrap_content"
+<<<<<<< HEAD
     android:layout_height="138dp"
+=======
+    android:layout_height="147dp"
+>>>>>>> 0e3f80fbd3ba66c8477635ca7f02fa62b2f62f29
     android:layout_marginStart="16dp"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 

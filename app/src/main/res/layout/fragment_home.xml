@@ -40,7 +40,11 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/child_recycler_view1"
         android:layout_width="match_parent"
+<<<<<<< HEAD
         android:layout_height="138dp"
+=======
+        android:layout_height="140dp"
+>>>>>>> 0e3f80fbd3ba66c8477635ca7f02fa62b2f62f29
         android:layout_marginBottom="8dp"
         tools:listitem="@layout/child_item_row1"
         app:layout_constraintBottom_toTopOf="@+id/products"
